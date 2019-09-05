@@ -97,6 +97,23 @@ public class Main {
             System.out.println("The girl's age is: " + ageOfGirl + " ,she is not legal you pervert! GET OF HER!");
         }
 
+        double firstVariant = 20.00;
+        double secondVariable = 80.00;
+
+        double firstResult = (firstVariant + secondVariable) * 100.00;
+        System.out.println("first result is : " + firstResult);
+
+       firstResult = firstResult % 40.00;
+        System.out.println("first result is : " + firstResult);
+
+       boolean isZero = (firstResult == 0) ? true : false;
+        System.out.println("isZero = " + isZero);
+
+
+       if (!isZero) {
+           System.out.println("Got some reminder!");
+       }
+
 
     }
 }
