@@ -55,6 +55,48 @@ public class Main {
             System.out.println("And I am scared of aliens!");
         }
 
+        int topScore = 80;
+        if (topScore < 100) {
+            System.out.println("You got the high score!");
+        }
+        int secondTopScore = 90;
+        if ((topScore > secondTopScore) && (topScore < 100)) {
+            System.out.println("greater than second top score and less than 100");
+        } else if (topScore > secondTopScore && topScore == 100) {
+            System.out.println("top score is :" + topScore);
+        }
+
+        if ((topScore > 90) || (secondTopScore <= 90)) {
+            System.out.println("Either or both of the conditions are true");
+
+        }
+
+        int newValue = 50;
+        if (newValue == 50) {
+            System.out.println("This is True");
+        }
+
+        boolean isCar = false;
+        if (isCar) {
+            System.out.println("This is not supposed to happen");
+        }
+
+        isCar = true;
+        boolean wasCar = isCar ? true : false;
+
+        if (wasCar) {
+            System.out.println("wasCar is true");
+        }
+
+        int ageOfGirl = 16;
+        boolean isEighteenOrOver = (ageOfGirl >= 18) ? true : false;
+
+        if (isEighteenOrOver) {
+            System.out.println("Age of girl is indeed : 18 or over");
+        } else {
+            System.out.println("The girl's age is: " + ageOfGirl + " ,she is not legal you pervert! GET OF HER!");
+        }
+
 
     }
 }
